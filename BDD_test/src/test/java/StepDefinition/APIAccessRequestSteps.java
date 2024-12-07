@@ -22,7 +22,7 @@ public class APIAccessRequestSteps {
         ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-        driver.get("http://localhost:4200/");
+        driver.get("http://localhost:3000/");
     }
 
     @When("I fill in the api access request form with valid details")
