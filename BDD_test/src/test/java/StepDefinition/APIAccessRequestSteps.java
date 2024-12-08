@@ -20,6 +20,9 @@ public class APIAccessRequestSteps {
     public void i_am_on_the_api_access_request_form_page() {
         // Setup WebDriver
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless"); // for headless browser
+
+
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.get("http://localhost:3000/");
